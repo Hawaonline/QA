@@ -1,1 +1,1 @@
-These are my python excercise answers.
+This is a repository with all my QA work.
