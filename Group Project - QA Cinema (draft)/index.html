@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Cinemas</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+    <script src="static/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="static/images/logo.png" alt="QA Cinemas Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to QA Cinemas</h1>
+            <p>Your Gateway to Classic and New Movies</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </section>
+    
+    <section class="movie-list">
+        <h2>Now Showing</h2>
+        <div class="movie-card">
+            <img src="static/images/movie1.jpg" alt="Movie 1">
+            <h3>Movie Title 1</h3>
+            <p>Description of the movie. Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn btn-book">Book Tickets</a>
+            <a href="#" class="btn btn-trailer" data-trailer-url="https://www.youtube.com/watch?v=movie1trailer">Watch Trailer</a>
+            <a href="#" class="btn btn-reviews" data-toggle-modal="reviews-modal-1">User Reviews</a>
+        </div>
+        
+        <div class="movie-card">
+            <img src="static/images/movie2.jpg" alt="Movie 2">
+            <h3>Movie Title 2</h3>
+            <p>Description of the movie. Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn btn-book">Book Tickets</a>
+            <a href="#" class="btn btn-trailer" data-trailer-url="https://www.youtube.com/watch?v=movie2trailer">Watch Trailer</a>
+            <a href="#" class="btn btn-reviews" data-toggle-modal="reviews-modal-2">User Reviews</a>
+        </div>
+    </section>
+    
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Stay updated with our latest movie releases and special events.</p>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-subscribe">Subscribe</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 QA Cinemas. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for user reviews -->
+    <div class="modal" id="reviews-modal-1">
+        <div class="modal-content">
+            <h3>Movie Title 1 Reviews</h3>
+            <ul>
+                <li><strong>User 1:</strong> Great movie!</li>
+                <li><strong>User 2:</strong> Loved it!</li>
+            </ul>
+            <button class="btn btn-close-modal">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="reviews-modal-2">
+        <div class="modal-content">
+            <h3>Movie Title 2 Reviews</h3>
+            <ul>
+                <li><strong>User 3:</strong> Excellent!</li>
+                <li><strong>User 4:</strong> Must-watch!</li>
+            </ul>
+            <button class="btn btn-close-modal">Close</button>
+        </div>
+    </div>
+</body>
+</html>
